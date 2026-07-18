@@ -52,3 +52,8 @@ const int   CORRECCION_SEG    = 0;        // Fine-tune seconds if needed
 - `fritzing/`: Circuit schematic and breadboard diagram (Fritzing files).
 - `images/`: Project images and diagrams.
 - `scripts/`: Directory reserved for future auxiliary scripts (e.g., Python, Bash).
+
+## Notas en español
+- La primera vez que se conecta espera 45 segundos a recibir la señal de GPS. Típicamente durante ese tiempo el módulo GPS no ha tenido suficiente tiempo para triangular una posición, por lo que el dispositivo se basará en la información por defecto de posición (SCL) y de la hora almacenada en el reloj interno.
+- Cuando el módulo GPS reciba señal de suficientes satélites para hacer la triangulación, emitirá una luz intermitente roja. El sistema actualiza la hora del reloj interno a la hora recibida por GPS cada 10 minutos. Si se desea forzar la actualización de hora, presionar el botón reset en el arduino.
+- Por alguna razón, no lo logré hacer funcionar en un Arduino Nano.
