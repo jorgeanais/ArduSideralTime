@@ -2,7 +2,7 @@
 
 Small project to calculate and show Local Sidereal Time (LST) on a small OLED display using Arduino.
 
-![Display Preview](images/display_preview.jpg)
+![Display Preview](images/display_preview_V2.jpg)
 ![Circuit Diagram](images/sideral_bb.png)
 
 ## Description
